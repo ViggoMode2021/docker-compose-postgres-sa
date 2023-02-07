@@ -1,0 +1,80 @@
+-- Creation of schools table
+CREATE TABLE IF NOT EXISTS schools (
+  school_id SERIAL NOT NULL,
+  school_city VARCHAR NOT NULL,
+  school_name varchar(50) NOT NULL,
+  school_address VARCHAR(120),
+  school_phone VARCHAR(20),
+  PRIMARY KEY (school_id)
+);
+
+INSERT INTO schools (school_city, school_name, school_address, school_phone)
+VALUES ('Bronx', 'Bronx 1 Middle School', '339 Morris Ave, FL 2, Bronx, NY 10451, United States'),
+       ('Bronx', 'Bronx 1', '339 Morris Ave, FL 2, Bronx, NY 10451, United States'),
+       ('Bronx', 'Bronx 2 Middle School', '270 East 167 Street, Floor 2, Bronx, NY 10456', '646-558-0038'),
+       ('Bronx', 'Bronx 2', '450 St. Pauls Place, Floor 5, Bronx, NY 10456, United States'),
+       ('Bronx', 'Bronx 3', '1000 Teller Ave, FL 4, Bronx, NY 10456, United States'),
+       ('Bronx', 'Bronx 4', '1000 Teller Ave, FL 4, Bronx, NY 10456, United States', '646-558-0043'),
+       ('Bronx', 'Bronx 5 Lower', '604 East 139th Street, Bronx, NY 10454 Bronx, NY, 10454', '347-284-6465'),
+       ('Bronx', 'Bronx 5 Upper', '450 St. Pauls Place, Floor 5, Bronx, NY 10456, United States'),
+       ('Bronx', 'Bronx Middle School', '965 Longwood Avenue, Floor 2 Bronx, NY 10459', '347-329-3360'),
+       ('Bronx', 'Bronx 4', '1000 Teller Ave, FL 4, Bronx, NY 10456, United States', '646-558-0043'),
+       ('Bronx', 'Williamsbridge', '3710 Barnes Ave, The Bronx, NY 10467', '347-284-6465'),
+       ('Brooklyn', 'Bed-Stuy 1', '211 Throop Avenue, Floor 3, Brooklyn, NY 11206', '718-704-1439'),
+       ('Brooklyn', 'Bed-Stuy Middle School', '70 Tompkins Avenue, Floor 2 Brooklyn, NY 11206', '718-635-3294'),
+       ('Brooklyn', 'Bergen Beach', '1420 East 68th Street, Floor 3, Brooklyn, NY 11234', '347-817-2017'),
+       ('Brooklyn', 'Bushwick', '139 Menahan Street, Brooklyn, NY 11221', '646-790-2173'),
+       ('Brooklyn', 'Cobble Hill', '284 Baltic Street, Lower Level, Brooklyn, NY 11201', '718-704-1460'),
+       ('Brooklyn', 'Crown Heights', '330 Crown Street, Floor 5, Brooklyn, NY 11225', '646-790-2129'),
+       ('Brooklyn', 'Ditmas Park Middle School', '72 Veronica Place, Floor 3, Brooklyn, NY 11226', '718-704-1464'),
+       ('Brooklyn', 'East Flatbush Middle School', '3109 Newkirk Avenue, Brooklyn, NY 11226', '718-395-6345'),
+       ('Brooklyn', 'Flatbush', '15 Snyder Avenue, Brooklyn, NY 11226', '646-790-2150'),
+       ('Brooklyn', 'Crown Heights', '330 Crown Street, Floor 5, Brooklyn, NY 11225', '646-790-2129'),
+       ('Brooklyn', 'Ditmas Park Middle School', '72 Veronica Place, Floor 3, Brooklyn, NY 11226', '718-704-1464'),
+       ('Brooklyn', 'East Flatbush Middle School', '3109 Newkirk Avenue, Brooklyn, NY 11226', '718-395-6345'),
+       ('Brooklyn', 'Lafayette Middle School', '787 Lafayette Avenue, Brooklyn, NY 11221', '646-790-2126'),
+       ('Brooklyn', 'Myrtle Middle School', '700 Park Avenue, Floor 3, Brooklyn, NY 11206', '646-569-5914'),
+       ('Brooklyn', 'Prospect Heights', '801 Park Place, Floor 4, Brooklyn, NY 11216', '646-790-2121'),
+       ('Brooklyn', 'Sheepshead Bay', '3000 Avenue X Brooklyn, NY 11235'),
+       ('Brooklyn', 'Williamsburg', '183 South 3rd Street, Floor 4, Brooklyn, NY 11211', '718-704-1419'),
+       ('Manhattan', 'Hamilton Heights Middle School', '461 West 131st Street New York, NY 10027', '212-845-9681'),
+       ('Manhattan', 'Harlem 1', '34 West 118th Street, Floor 2, New York, NY 10026', '646-277-7170'),
+       ('Manhattan', 'Harlem 2', '144 East 128th Street, Floor 3, New York, NY 10035', '646-442-6600'),
+       ('Manhattan', 'Harlem 3', '410 East 100th Street, Floor 4, New York, NY 10029', '646-790-2177'),
+       ('Manhattan', 'Harlem 4', '240 West 113th Street, Floor 3, New York, NY 10026', '646-442-6500'),
+       ('Manhattan', 'Harlem 5', '301 West 140th Street, Floor 3, New York, NY 10030', '646-380-2580'),
+       ('Manhattan', 'Harlem 6', '461 West 131st Street, New York, NY 10027', '646-569-5900'),
+       ('Manhattan', 'Harlem East', '141 East 111th Street, Floor 3, New York, NY 10029', '646-747-6700'),
+       ('Manhattan', 'Harlem North Central', '175 West 134th Street, Floor 3, New York, NY 10030', '646-790-2126'),
+       ('Manhattan', 'Harlem West', '215 West 114th Street, Floor 5, New York, NY 10026', '646-569-5920'),
+       ('Manhattan', 'Hell’s Kitchen', '439 West 49th Street, Floor 2, New York NY 10019', '646-790-2153'),
+       ('Manhattan', 'High School of the Liberal Arts – Harlem', '509 West 129th Street, Floor 3, New York, NY 10027', '646-558-0093'),
+       ('Manhattan', 'High School of the Liberal Arts-Brooklyn', '70 Tompkins Avenue, 2nd Fl. Brooklyn, NY 11206', '718-635-3294'),
+       ('Manhattan', 'Harlem West', '215 West 114th Street, Floor 5, New York, NY 10026', '646-569-5920'),
+       ('Manhattan', 'Hell’s Kitchen', '439 West 49th Street, Floor 2, New York NY 10019', '646-790-2153'),
+       ('Manhattan', 'High School of the Liberal Arts – Harlem', '509 West 129th Street, Floor 3, New York, NY 10027', '646-558-0093'),
+       ('Manhattan', 'Hudson Yards', '500 West 41st Street, New York, NY 10036', '212-845-9683'),
+       ('Manhattan', 'Hudson Yards Middle School', '500 West 41st Street, New York, NY 10036', '212-845-9683'),
+       ('Manhattan', 'Midtown West Middle School', '439 West 49th Street, New York, NY 10019', '646-558-0050'),
+       ('Manhattan', 'Union Square', '40 Irving Place, Floor 2, New York, NY 10003', '646-790-2168'),
+       ('Manhattan', 'Upper West', '145 West 84th Street, Floor 2, New York, NY 10024', '646-274-1580'),
+       ('Manhattan', 'Washington Heights', '701 Fort Washington Avenue, New York, NY 10040', '646-558-0027'),
+       ('Queens', 'Far Rockaway', '10-45 Nameoke St, Floor 3, Queens, NY 11691', '718-704-1421'),
+       ('Queens', 'Far Rockaway Middle School', '10-45 Nameoke St, Queens, NY 11691', '347-826-1297'),
+       ('Queens', 'Ozone Park Middle School', '215 West 114th Street, Floor 5, New York, NY 10026', '646-569-5920'),
+       ('Queens', 'Rochdale', '109-55 128th Street South Ozone Park, NY 11420', '347-826-1300'),
+       ('Queens', 'Rosedale', '147-65 249th Street, Rosedale, NY 11422', '347-514-7060'),
+       ('Queens', 'South Jamaica', '120-27 141st Street, Jamaica, NY 11436', '718-704-1441'),
+       ('Queens', 'Springfield Gardens', '132-55 Ridgedale Street, Floor 3, Queens, NY 11413', '347-602-4335'),
+       ('Queens', 'Springfield Gardens Middle School', '132-55 Ridgedale St, Queens, NY 11413', '646-545-6914'),
+       ('Queens', 'Springfield Gardens South');
+       
+-- Creation of teachers table
+CREATE TABLE IF NOT EXISTS teachers (
+  teacher_id SERIAL NOT NULL,
+  teacher_name varchar(450) NOT NULL,
+  PRIMARY KEY (teacher_id)
+  CONSTRAINT fk_school
+      FOREIGN KEY(school_id) 
+	  REFERENCES schools(school_id)
+);
