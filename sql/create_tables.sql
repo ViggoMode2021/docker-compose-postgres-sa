@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS schools (
   PRIMARY KEY (school_id)
 );
 
-INSERT INTO schools (school_city, school_name, school_address, school_phone)
+INSERT INTO schools
 VALUES ('Bronx', 'Bronx 1 Middle School', '339 Morris Ave, FL 2, Bronx, NY 10451, United States'),
        ('Bronx', 'Bronx 1', '339 Morris Ave, FL 2, Bronx, NY 10451, United States'),
        ('Bronx', 'Bronx 2 Middle School', '270 East 167 Street, Floor 2, Bronx, NY 10456', '646-558-0038'),
