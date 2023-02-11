@@ -1,3 +1,13 @@
+  -- Creation of schools table
+CREATE TABLE IF NOT EXISTS schools (
+  school_id SERIAL NOT NULL,
+  school_city VARCHAR NOT NULL,
+  school_name varchar(50) NOT NULL,
+  school_address VARCHAR(120),
+  school_phone VARCHAR(20),
+  PRIMARY KEY (school_id)
+);
+
 INSERT INTO schools (school_city, school_name, school_address, school_phone)
 VALUES ('Bronx', 'Bronx 1 Middle School', '339 Morris Ave, FL 2, Bronx, NY 10451, United States', 'none'),
        ('Bronx', 'Bronx 1', '339 Morris Ave, FL 2, Bronx, NY 10451, United States', 'none'),
