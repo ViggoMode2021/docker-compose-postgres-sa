@@ -68,3 +68,13 @@ VALUES ('Bronx', 'Bronx 1 Middle School', '339 Morris Ave, FL 2, Bronx, NY 10451
        ('Queens', 'Springfield Gardens', '132-55 Ridgedale Street, Floor 3, Queens, NY 11413', '347-602-4335'),
        ('Queens', 'Springfield Gardens Middle School', '132-55 Ridgedale St, Queens, NY 11413', '646-545-6914'),
        ('Queens', 'Springfield Gardens South', 'none', 'none');
+
+-- Creation of teachers table
+CREATE TABLE IF NOT EXISTS teachers (
+  teacher_id SERIAL NOT NULL,
+  teacher_name varchar(450) NOT NULL,
+  PRIMARY KEY (teacher_id)
+  CONSTRAINT fk_school
+      FOREIGN KEY(school_id) 
+	  REFERENCES schools(school_id)
+);
